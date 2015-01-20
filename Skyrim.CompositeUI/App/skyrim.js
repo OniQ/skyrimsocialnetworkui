@@ -5,6 +5,10 @@
           templateUrl: 'UserProfile/userProfile.html',
           controller: 'userProfileCtrl'
       })
+      .when('/about', {
+          templateUrl: 'About/about.html',
+          controller: 'aboutCtrl'
+      })
       .otherwise({
           redirectTo: '/'
       });
