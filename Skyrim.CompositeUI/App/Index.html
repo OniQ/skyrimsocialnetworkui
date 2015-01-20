@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="skyrim">
+<head>
+    <title>Skyrim project</title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-route.js"></script>
+    <script src="skyrim.js"></script>
+    <script src="UserProfile/userProfileCtrl.js"></script>
+</head>
+<body>
+    <div>
+        <a href="#/">Home</a>
+    </div>
+
+    <div ng-controller="mainController">
+        <h1>{{message}}</h1>
+        <div ng-view>
+        </div>
+    </div>
+</body>
+</html>
