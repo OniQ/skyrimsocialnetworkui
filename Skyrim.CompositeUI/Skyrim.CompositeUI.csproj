@@ -127,12 +127,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\About\about.html" />
-    <Content Include="App\About\aboutCtrl.js" />
-    <Content Include="App\Index.html" />
+    <Content Include="App\dependencies.js" />
+    <Content Include="App\Services\routeResolver.js" />
+    <Content Include="Index.html">
+      <BrowseToURL>~/Index.html</BrowseToURL>
+    </Content>
     <Content Include="App\skyrim.js" />
-    <Content Include="App\UserProfile\userProfile.html" />
-    <Content Include="App\UserProfile\userProfileCtrl.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -954,7 +954,9 @@
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\toaster.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -979,9 +981,10 @@
     <Content Include="Scripts\version.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Common\" />
+    <Folder Include="App\Controllers\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -1004,7 +1007,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>24503</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:19521/Skyrim</IISUrl>
+          <IISUrl>http://localhost:19521/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
